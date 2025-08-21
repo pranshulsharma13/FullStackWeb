@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Application Form</title>  
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    h2{color:black;}
+    p{color: blueviolet;}
+  </style>  
+</head>
+<body>
+  <!-- Add this to your HTML file -->
+<nav class="navbar">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+
+  <form action="#" method="post" enctype="multipart/form-data">
+    <h2>Application Form</h2>
+    <br>
+    <p style="color: black;">This is a application form</p>
+    <br>
+    <fieldset class="name border" >
+      <legend>Personal Information</legend>
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+    
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" name="dob" required>
+    <br><br>
+
+    <label for="gender">Gender</label>
+    <select id="gender" name="gender" required>
+      <option value="">-- Select Gender --</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+    <br><br>
+
+    <label for="Phone">Phone Number</label>
+    <input type="text" id="text" name="text" required>
+    <br><br>
+
+    <label for="country">Country</label>
+    <select id="country" name="country" required>
+      <option value="">-- Select Country --</option>
+      <option value="india">India</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+      <option value="canada">Canada</option>
+      <option value="australia">Australia</option>
+    </select>
+    <br><br>
+
+    <label>Skills</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="skills" value="html"> HTML</label>
+      <label><input type="checkbox" name="skills" value="css"> CSS</label>
+      <label><input type="checkbox" name="skills" value="js"> JavaScript</label>
+      <label><input type="checkbox" name="skills" value="python"> Python</label>
+      <label><input type="checkbox" name="skills" value="java"> Java</label>
+    
+    <br><br>
+
+    <label for="resume">Upload Resume</label>
+    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+    <br><br>
+
+    
+    </fieldset>
+
+    <br><br>
+
+    <fieldset class="name1 border">
+      <legend>Job Preference</legend>
+
+
+    <label for="position">Position Applied For</label>
+      <input type="text" id="position" name="position" required>
+      <br><br>
+
+      <label for="experience">Years of Experience</label>
+      <input type="number" id="experience" name="experience" min="0" required>
+      <br><br>
+
+      <label for="cover">Cover Letter</label>
+      <br>
+      <textarea id="cover" name="cover" rows="4" placeholder="Write your cover letter here..."></textarea>
+      <br><br>
+
+      
+      <label for="startDate">Available Start Date</label>
+      <input type="date" id="startDate" name="startDate" required>
+      <br><br>
+
+      <label for="relocate">Willing to Relocate?</label>
+      <select id="relocate" name="relocate">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+        <option value="maybe">Maybe</option>
+      </select>
+      <br><br>
+
+      
+    
+    </fieldset>
+    <br><br>
+    <div class="name2 border">
+    <button type="submit">Submit Application</button>
+    </div>
+
+  </form>
+
+  
+  
+
+</body>
+</html>
