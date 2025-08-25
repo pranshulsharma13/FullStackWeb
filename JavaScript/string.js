@@ -25,3 +25,14 @@
 let text = "hello javascript , welcome to our world"
 let includeResult = text.includes("java");
 console.log(includeResult);
+
+console.log(str.search("o"));
+let result = str1.match("pranshul");
+console.log(result);
+
+
+//SPLIT
+console.log(str1.split(""));
+console.log(str1.split("s"));
+console.log(str1.split("r"));
+console.log(str1.split(" ",3));
