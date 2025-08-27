@@ -1,0 +1,51 @@
+
+.h1 ,h2,h3,h4{
+    text-align: center;
+    color: darkblue;
+    text-transform: uppercase;
+}
+
+#posts article p{
+    color: brown hex color;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTawpaOU7eNStBQEVHZlQ7vSMWhoYH09kHxww&s");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+nav {
+    background-color: grey;
+    overflow: hidden;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    
+}
+nav a:hover {
+    color: white;
+    text-decoration: underline;
+    background-color: darkblue;
+    display: inline-block;
+}
+table {
+    width: 70%;
+    
+    margin: auto;
+    font-size: 18px;
+    text-align: center;
+    background-color: white;
+}
+footer{
+    text-align: center;
+    padding: 5px;
+    background-color: grey;
+    color: white;
+    ;
+    bottom: 0;
+    width: 100%;
+}
+
