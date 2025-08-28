@@ -1,0 +1,94 @@
+.header{
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 24px;
+    margin-left: auto;
+}
+body{
+    background-color: antiquewhite;
+}
+.sidebar {
+    height: 100vh; /* Full-height */
+    width: 250px; /* Width of the sidebar */
+    position: fixed; /* Stay in place */
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: burlywood;
+}
+.sidebar h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Container for all cards */
+.menu-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Individual card styling */
+.menu-box {
+  background-color: #fff;
+  border: 5px solid #ddd;
+  border-radius: 10px;
+  width: 300px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover effect */
+.menu-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Card heading */
+.menu-box h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+/* Card text */
+.menu-box p {
+  color: #555;
+  font-size: 15px;
+}
+.menu-box{
+    text-align: center;
+}
+.box{
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+    background-color: lightcyan;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 600px;
+    text-align: center;
+}
+.box {
+    margin: 20px auto;
+}
+.main-content {
+    margin-left: 250px; /* Same as the width of the sidebar */
+    padding: 20px;
+}
