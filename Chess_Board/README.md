@@ -1,7 +1,7 @@
 ♟️ Chess Board
 
-This project is a simple Chess Board layout created using only HTML.
-It demonstrates how to build a basic chessboard structure without CSS or JavaScript.
+This project is a simple Chess Board layout created using only HTML and CSS.
+It demonstrates how to build a basic chessboard structure  JavaScript.
 
 
 🚀 Features
