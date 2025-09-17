@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CSS Solar System</title>
+  <style>
+    body {
+      margin:0;
+      background:radial-gradient(circle at center, #000015, #000);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      height:100vh;
+      overflow:hidden;
+      color:white;
+      font-family:system-ui, sans-serif;
+    }
+
+    .solar-system {
+      position:relative;
+      width:500px;
+      height:500px;
+    }
+
+    .sun {
+      position:absolute;
+      top:50%;
+      left:50%;
+      width:80px;
+      height:80px;
+      background:radial-gradient(circle, #ffdd33, #ff8800);
+      border-radius:50%;
+      transform:translate(-50%,-50%);
+      box-shadow:0 0 50px 20px rgba(255,200,0,0.6);
+      z-index:10;
+    }
+
+    /* Orbits */
+    .orbit {
+      position:absolute;
+      top:50%;
+      left:50%;
+      border:1px dashed rgba(255,255,255,0.2);
+      border-radius:50%;
+      transform:translate(-50%,-50%);
+      animation: rotate linear infinite;
+    }
+
+    .planet {
+      position:absolute;
+      top:50%;
+      left:50%;
+      border-radius:50%;
+      transform:translate(-50%,-50%);
+    }
+
+    /* Mercury */
+    .orbit.mercury {
+      width:120px; height:120px;
+      animation-duration:4s;
+    }
+    .planet.mercury {
+      width:10px; height:10px;
+      background:#aaa;
+      animation: revolve-mercury 4s linear infinite;
+    }
+
+    /* Venus */
+    .orbit.venus {
+      width:180px; height:180px;
+      animation-duration:7s;
+    }
+    .planet.venus {
+      width:16px; height:16px;
+      background:#d4a373;
+      animation: revolve-venus 7s linear infinite;
+    }
+
+    /* Earth */
+    .orbit.earth {
+      width:260px; height:260px;
+      animation-duration:10s;
+    }
+    .planet.earth {
+      width:18px; height:18px;
+      background:#3fa7d6;
+      animation: revolve-earth 10s linear infinite;
+    }
+
+    /* Mars */
+    .orbit.mars {
+      width:340px; height:340px;
+      animation-duration:15s;
+    }
+    .planet.mars {
+      width:14px; height:14px;
+      background:#d1495b;
+      animation: revolve-mars 15s linear infinite;
+    }
+
+    /* Keyframes for planets revolving */
+    @keyframes revolve-mercury {
+      from { transform: rotate(0deg) translateX(60px) rotate(0deg); }
+      to   { transform: rotate(360deg) translateX(60px) rotate(-360deg); }
+    }
+    @keyframes revolve-venus {
+      from { transform: rotate(0deg) translateX(90px) rotate(0deg); }
+      to   { transform: rotate(360deg) translateX(90px) rotate(-360deg); }
+    }
+    @keyframes revolve-earth {
+      from { transform: rotate(0deg) translateX(130px) rotate(0deg); }
+      to   { transform: rotate(360deg) translateX(130px) rotate(-360deg); }
+    }
+    @keyframes revolve-mars {
+      from { transform: rotate(0deg) translateX(170px) rotate(0deg); }
+      to   { transform: rotate(360deg) translateX(170px) rotate(-360deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="solar-system">
+    <div class="sun"></div>
+
+    <div class="orbit mercury">
+      <div class="planet mercury"></div>
+    </div>
+
+    <div class="orbit venus">
+      <div class="planet venus"></div>
+    </div>
+
+    <div class="orbit earth">
+      <div class="planet earth"></div>
+    </div>
+
+    <div class="orbit mars">
+      <div class="planet mars"></div>
+    </div>
+  </div>
+
+</body>
+</html>
